@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+input {
+  border-radius: 5px;
+  outline: none;
+  height: 45px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+button {
+  border-radius: 5px;
+  width: 200px;
+  outline: none;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login__container,
+.signup__container,
+.verify,
+.dashboard {
+  width: 60%;
+  min-height: 70vh;
+  margin: 65px auto;
+  display: flex;
+  padding: 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #a1a1a1, #c0c0c0);
+  box-shadow: 31px 31px 78px #989898,
+    -31px -31px 78px #cecece;
+}
+
+.login__form,
+.verify__form,
+.signup__form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginBtn,
+.signupBtn,
+.codeBtn {
+  background-color: green;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.signOutBtn {
+  background-color: #c21010;
+  color: #fff;
+}
+
+.link {
+  cursor: pointer;
+  color: rgb(39, 147, 39);
+}
+
+.code {
+  width: 50%;
+  text-align: center;
+}
+
+.verify__form {
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+
+  .login__container,
+  .signup__container,
+  .verify {
+    padding: 30px;
+  }
+}
